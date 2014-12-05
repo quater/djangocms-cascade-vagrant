@@ -29,7 +29,7 @@ Presuming you have [Vagrant](https://docs.vagrantup.com/v2/getting-started/index
 Use the browser on your Vagrant host by using the URL:
 `http://localhost:8000/`
 
-> Login with user **admin** and the password is what you have set during *vagrant up*.
+> Login with user **admin** and the password which you have set during *vagrant up*.
 
 **Add a page**
 
