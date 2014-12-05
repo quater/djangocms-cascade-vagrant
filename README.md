@@ -6,7 +6,7 @@ Presuming you have [Vagrant](https://docs.vagrantup.com/v2/getting-started/index
 
 **Download from GitHub**
 
-`$ git clone https://github.com/topler/djangocms-cascade-vagrant.git`
+`$ git clone https://github.com/quater/djangocms-cascade-vagrant.git`
 
 `$ cd djangocms-cascade-vagrant`
 
