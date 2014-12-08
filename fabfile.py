@@ -21,6 +21,7 @@ def create_virtualenv():
         run("git clone -b 0.4.0 https://github.com/jrief/djangocms-cascade.git")
         # Place custom "manage.py" file into the /home/vagrant/djangocms-cascade/example/ directory
         put(os.getcwd() + '/manage.py', '/home/vagrant/djangocms-cascade/examples/')
+        put(os.getcwd() + '/requirements.txt', '/home/vagrant/djangocms-cascade/examples/bs3demo/')
         with cd("/home/vagrant/djangocms-cascade/"):
             # Install bootstrap into the /home/vagrant/djangocms-cascade/bower_components/ directory
             run("source /home/vagrant/cascadedemo/bin/activate && bower install bootstrap --config.interactive=false")
@@ -29,11 +30,8 @@ def create_virtualenv():
                 run("source /home/vagrant/cascadedemo/bin/activate && pip install -r bs3demo/requirements.txt")
                 # Djangcms-Cascade 0.4.0 is not yet available in the Python Package Index and therefore it's installed directly from GitHub
                 run("source /home/vagrant/cascadedemo/bin/activate  && pip install git+https://github.com/jrief/djangocms-cascade.git@0.4.0")
-                run("source /home/vagrant/cascadedemo/bin/activate && python manage.py makemigrations")
-                run("source /home/vagrant/cascadedemo/bin/activate && python manage.py migrate")
-                run("source /home/vagrant/cascadedemo/bin/activate && python manage.py createsuperuser --username '%s' --email '%s'" % ("admin", "admin@example.com"))
-                run("source /home/vagrant/cascadedemo/bin/activate && python manage.py collectstatic --noinput")
-
+                run("source /home/vagrant/cascadedemo/bin/activate && python manage.py syncdb")
+                
 def main():
 
     start_time = time.time()
