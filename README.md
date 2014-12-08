@@ -26,7 +26,7 @@ Presuming you have [Vagrant](https://docs.vagrantup.com/v2/getting-started/index
 
 **Connect**
 
-Open browser on your Vagrant host by using the URL:
+Open browser on your Vagrant host and access the URL:
 `http://localhost:8000/`
 
 > Login with user **admin** and the password which you have set during *vagrant up*.
