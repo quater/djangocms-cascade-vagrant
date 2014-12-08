@@ -22,7 +22,7 @@ Presuming you have [Vagrant](https://docs.vagrantup.com/v2/getting-started/index
 
 **Start the runserver**
 
-`$ source /home/vagrant/cascadedemo/bin/activate && cd /home/vagrant/djangocms-cascade/examples/ && python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000`
+`$ source /home/vagrant/cascadedemo/bin/activate && cd /home/vagrant/djangocms-cascade/examples/ && python manage.py runserver 0.0.0.0:8000`
 
 **Connect**
 
