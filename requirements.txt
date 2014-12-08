@@ -1,0 +1,21 @@
+django==1.6.8   # As of writing this script, djangocms-cascade does not work with Django 1.7.1
+Django-Select2
+Pillow
+Unidecode
+South
+argparse
+beautifulsoup4
+django-classy-tags
+django-cms
+django-filer
+django-mptt
+django-polymorphic
+django-sekizai
+djangocms-admin-style
+djangocms-text-ckeditor
+easy-thumbnails
+html5lib
+jsonfield
+pyflakes
+six
+wsgiref
